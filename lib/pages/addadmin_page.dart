@@ -6,7 +6,7 @@ class AddAdminPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar dengan ikon panah kiri dan judul
+      // AppBar
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,

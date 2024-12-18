@@ -11,7 +11,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar untuk ikon panah dan judul
+      // AppBar
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -39,7 +39,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
         centerTitle: false,
       ),
 
-      // Body untuk menampilkan placeholder
+      // Body placeholder
       body: Column(
         children: [
           Expanded(
@@ -102,7 +102,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
               // Tombol Back
               GestureDetector(
                 onTap: () {
-                  Navigator.pop(context); // Kembali ke halaman sebelumnya
+                  Navigator.pop(context);
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

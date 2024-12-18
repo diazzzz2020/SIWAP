@@ -27,7 +27,7 @@ class SiwapPage extends StatelessWidget {
         ),
         centerTitle: false,
         actions: [
-          // Tombol Admin (hanya teks)
+          // Tombol Admin
           Padding(
             padding: const EdgeInsets.only(right: 16.0),
             child: GestureDetector(
@@ -52,10 +52,9 @@ class SiwapPage extends StatelessWidget {
       // Body (Peta)
       body: Column(
         children: [
-          // Peta di tengah
           Expanded(
             child: Container(
-              color: Colors.grey[300], // Placeholder background
+              color: Colors.grey[300],
               child: const Center(
                 child: Text(
                   'Map Placeholder',
@@ -65,7 +64,7 @@ class SiwapPage extends StatelessWidget {
             ),
           ),
 
-          // Informasi Lokasi di bawah
+          // Informasi Lokasi
           Container(
             padding: const EdgeInsets.all(16.0),
             decoration: const BoxDecoration(

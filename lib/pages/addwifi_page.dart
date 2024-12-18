@@ -6,7 +6,7 @@ class AddWifiPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar dengan ikon panah kiri dan judul
+      // AppBar
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -28,7 +28,7 @@ class AddWifiPage extends StatelessWidget {
         centerTitle: false,
       ),
 
-      // Body dengan form
+      // Body form
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: ListView(

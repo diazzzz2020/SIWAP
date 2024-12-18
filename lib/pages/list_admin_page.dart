@@ -27,7 +27,7 @@ class ListAdminPage extends StatelessWidget {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 8.0), // Geser icon sedikit ke kiri
+            padding: const EdgeInsets.only(right: 8.0),
             child: IconButton(
               icon: const Icon(Icons.search, color: Colors.black),
               onPressed: () {
