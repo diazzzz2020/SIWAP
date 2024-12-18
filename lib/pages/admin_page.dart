@@ -11,7 +11,7 @@ class _AdminPageState extends State<AdminPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar untuk ikon panah dan judul
+      // AppBar judul
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -20,11 +20,11 @@ class _AdminPageState extends State<AdminPage> {
           padding: const EdgeInsets.only(left: 10.0),
           child: IconButton(
             icon: Icon(
-              Icons.arrow_back, // Ikon panah ke kiri
-              color: Colors.black, // Warna hitam
+              Icons.arrow_back,
+              color: Colors.black,
             ),
             onPressed: () {
-              Navigator.pop(context); // Navigasi kembali
+              Navigator.pop(context);
             },
           ),
         ),
@@ -39,10 +39,9 @@ class _AdminPageState extends State<AdminPage> {
         centerTitle: false,
       ),
 
-      // Body untuk menampilkan peta
       body: Column(
         children: [
-          // Peta di tengah layar
+          // Peta
           Expanded(
             child: Container(
               color: Colors.grey[200],
@@ -52,8 +51,6 @@ class _AdminPageState extends State<AdminPage> {
                   style: TextStyle(fontSize: 20, color: Colors.grey),
                 ),
               ),
-              // Jika ingin menggunakan peta asli, gunakan GoogleMap widget:
-              // child: GoogleMap(...),
             ),
           ),
         ],
@@ -71,7 +68,7 @@ class _AdminPageState extends State<AdminPage> {
               // Tombol Add Wifi
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/addwifi'); // Navigasi ke AddWifiPage
+                  Navigator.pushNamed(context, '/addwifi');
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

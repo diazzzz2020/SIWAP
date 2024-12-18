@@ -54,7 +54,7 @@ class LoginSuperadminPage extends StatelessWidget {
                   ),
                 ),
 
-                // Tombol teks "Login sebagai Admin"
+                // Tombol Login sebagai Admin
                 GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/home');
@@ -74,7 +74,6 @@ class LoginSuperadminPage extends StatelessWidget {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-                    // Tambahkan logika login Superadmin
                     Navigator.pushNamed(context, '/superadmin');
                   },
                   style: ElevatedButton.styleFrom(

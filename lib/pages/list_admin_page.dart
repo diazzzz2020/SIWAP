@@ -6,7 +6,7 @@ class ListAdminPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar dengan teks "List Admin"
+      // AppBar
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -29,7 +29,7 @@ class ListAdminPage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.search, color: Colors.black),
             onPressed: () {
-              // Tambahkan aksi pencarian di sini jika diperlukan
+            
             },
           ),
         ],
@@ -40,7 +40,7 @@ class ListAdminPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
-          itemCount: 5, // Jumlah contoh item list
+          itemCount: 5,
           itemBuilder: (context, index) {
             return Container(
               margin: const EdgeInsets.only(bottom: 20),
@@ -133,7 +133,7 @@ class ListAdminPage extends StatelessWidget {
               // Tombol List Admin
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/listadmin'); // Navigasi ke ListAdminPage
+                  Navigator.pushNamed(context, '/listadmin');
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

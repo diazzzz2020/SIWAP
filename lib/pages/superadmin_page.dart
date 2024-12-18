@@ -24,7 +24,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
               color: Colors.black,
             ),
             onPressed: () {
-              Navigator.pop(context); // Navigasi kembali
+              Navigator.pop(context);
             },
           ),
         ),
@@ -85,7 +85,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
               // Tombol Add Admin
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/addadmin'); // Navigasi ke AddAdminPage
+                  Navigator.pushNamed(context, '/addadmin');
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -102,7 +102,7 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
               // Tombol List Admin
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/listadmin'); // Navigasi ke ListAdminPage
+                  Navigator.pushNamed(context, '/listadmin');
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

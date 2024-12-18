@@ -116,7 +116,7 @@ class AddWifiPage extends StatelessWidget {
     );
   }
 
-  // Fungsi untuk membangun TextFormField
+  // Fungsi TextFormField
   Widget buildTextField(String hintText) {
     return TextFormField(
       decoration: InputDecoration(

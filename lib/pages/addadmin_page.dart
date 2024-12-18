@@ -116,7 +116,7 @@ class AddAdminPage extends StatelessWidget {
     );
   }
 
-  // Fungsi untuk membangun TextFormField
+  // Fungsi TextFormField
   Widget buildTextField(String hintText, {bool obscureText = false}) {
     return TextFormField(
       obscureText: obscureText,

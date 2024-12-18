@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
 
-                // Tombol teks "Login sebagai Superadmin"
+                // Tombol Login sebagai Superadmin
                 GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/loginsuperadmin');
