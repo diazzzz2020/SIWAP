@@ -26,10 +26,19 @@ class ListAdminPage extends StatelessWidget {
           ),
         ),
         actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0), // Geser icon sedikit ke kiri
+            child: IconButton(
+              icon: const Icon(Icons.search, color: Colors.black),
+              onPressed: () {
+                // Action untuk search
+              },
+            ),
+          ),
           IconButton(
-            icon: const Icon(Icons.search, color: Colors.black),
+            icon: const Icon(Icons.add, color: Colors.black),
             onPressed: () {
-            
+              Navigator.pushNamed(context, '/addadmin');
             },
           ),
         ],
@@ -108,23 +117,6 @@ class ListAdminPage extends StatelessWidget {
                     Text(
                       'Add Wifi',
                       style: TextStyle(color: Colors.green, fontSize: 12),
-                    ),
-                  ],
-                ),
-              ),
-
-              // Tombol Add Admin
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/addadmin');
-                },
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Icon(Icons.add, color: Colors.grey),
-                    Text(
-                      'Add Admin',
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                   ],
                 ),

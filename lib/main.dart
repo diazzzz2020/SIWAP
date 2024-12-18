@@ -8,6 +8,7 @@ import 'package:siwap/pages/login_superadmin_page.dart';
 import 'package:siwap/pages/superadmin_page.dart';
 import 'package:siwap/pages/addadmin_page.dart';
 import 'package:siwap/pages/list_admin_page.dart';
+import 'package:siwap/pages/siwap_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/superadmin': (context) => const SuperAdminPage(),
         '/addadmin': (context) => const AddAdminPage(),
         '/listadmin': (context) => const ListAdminPage(),
+        '/siwap': (context) => const SiwapPage(),
       },
     );
   }

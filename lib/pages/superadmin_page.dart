@@ -82,23 +82,6 @@ class _SuperAdminPageState extends State<SuperAdminPage> {
                 ),
               ),
 
-              // Tombol Add Admin
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/addadmin');
-                },
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Icon(Icons.add, color: Colors.green),
-                    Text(
-                      'Add Admin',
-                      style: TextStyle(color: Colors.green),
-                    ),
-                  ],
-                ),
-              ),
-
               // Tombol List Admin
               GestureDetector(
                 onTap: () {
