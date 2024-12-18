@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class LoginSuperadminPage extends StatelessWidget {
+  const LoginSuperadminPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 // Title
                 const SizedBox(height: 20),
                 const Text(
-                  'Login Admin',
+                  'Login Superadmin',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                   child: TextFormField(
                     decoration: const InputDecoration(
                       labelText: 'Username',
-                      hintText: 'Enter your username',
+                      hintText: 'Enter your superadmin username',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -48,19 +48,19 @@ class HomePage extends StatelessWidget {
                     obscureText: true,
                     decoration: const InputDecoration(
                       labelText: 'Password',
-                      hintText: 'Enter your Password',
+                      hintText: 'Enter your superadmin Password',
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
 
-                // Tombol teks "Login sebagai Superadmin"
+                // Tombol teks "Login sebagai Admin"
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/loginsuperadmin');
+                    Navigator.pushNamed(context, '/home');
                   },
                   child: const Text(
-                    "Login sebagai Superadmin",
+                    "Login sebagai Admin",
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -74,7 +74,8 @@ class HomePage extends StatelessWidget {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/admin');
+                    // Tambahkan logika login Superadmin
+                    Navigator.pushNamed(context, '/superadmin');
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
